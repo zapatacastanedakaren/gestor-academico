@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestión de Estudiantes</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../src/css/style.css">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+<header class="bg-primary text-white p-3 text-center">
+    <h1>Gestor Académico</h1>
+</header>
+
+<main class="container-fluid flex-grow-1">
+    <div class="row">
+
+        <!-- SIDEBAR -->
+        <div class="col-md-3 sidebar p-4">
+            <h4>Menú</h4>
+            <a href="../index.html">🏠 Inicio</a>
+            <a href="estudiantes.html">👩‍🎓 Estudiantes</a>
+            <a href="asignaturas.html">📚 Asignaturas</a>
+            <a href="notas.html">📝 Notas</a>
+        </div>
+
+        <!-- CONTENIDO -->
+        <div class="col-md-9 p-4">
+
+            <h2>Gestión de Estudiantes</h2>
+
+            <!-- BOTÓN -->
+            <button class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#estudianteModal">
+                Agregar Estudiante
+            </button>
+
+            <!-- TABLA -->
+            <table class="table table-bordered">
+                <thead class="table-dark">
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Documento</th>
+                        <th>Correo</th>
+                        <th>Programa</th>
+                        <th>Estado</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <!-- Filas de ejemplo (solo visual) -->
+                    <tr>
+                        <td>1</td>
+                        <td>Ana López</td>
+                        <td>12345678</td>
+                        <td>ana@email.com</td>
+                        <td>Ingeniería</td>
+                        <td>Activo</td>
+                        <td>
+                            <button class="btn btn-warning btn-sm">Editar</button>
+                            <button class="btn btn-danger btn-sm">Eliminar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</main>
+
+<footer class="footer text-center p-3 mt-auto">
+    Programación con Java & JavaScript - 2026
+</footer>
+
+<!-- MODAL -->
+<div class="modal fade" id="estudianteModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title">Agregar Estudiante</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body">
+                <form>
+
+                    <input class="form-control mb-2" placeholder="Nombre">
+                    <input class="form-control mb-2" placeholder="Documento">
+                    <input class="form-control mb-2" placeholder="Correo">
+                    <input class="form-control mb-2" placeholder="Programa">
+
+                    <select class="form-control mb-2">
+                        <option>Activo</option>
+                        <option>Inactivo</option>
+                    </select>
+
+                </form>
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn btn-success">Guardar</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+
