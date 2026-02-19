@@ -1,26 +1,46 @@
-# 📚 Gestor Académico
+Fase 2 – Implementación con JavaScript
 
-Proyecto desarrollado para el Reto 2 Académico – Fase 1.
+En esta fase el proyecto dejó de ser una maqueta visual y pasó a comportarse como un sistema funcional en el navegador.
 
-## 📌 Descripción
+✅ Funcionalidades implementadas
 
-El Gestor Académico es una aplicación web diseñada para administrar información relacionada con:
+CRUD en memoria (Agregar, Editar y Eliminar).
 
-- Estudiantes
-- Asignaturas
-- Notas
+Datos iniciales cargados automáticamente en cada módulo.
 
-En esta Fase 1 se desarrolla la base estructural y visual del sistema, incluyendo:
+Uso de arreglos de objetos para manejar la información.
 
-- Organización del repositorio
-- Construcción de las vistas HTML
-- Implementación de tablas estructuradas
-- Inclusión de modales listas para uso futuro
-- Diseño visual coherente con navegación mediante sidebar
+Render dinámico de tablas.
 
-En la siguiente fase se implementará la lógica para agregar, editar y eliminar registros mediante JavaScript.
+Modal como único mecanismo para agregar y editar registros.
 
----
+Evento submit único para guardar información.
 
-## 🗂 Estructura del Proyecto
+Delegación de eventos en las tablas (tbody).
+
+Validaciones específicas:
+
+Créditos ≥ 1 en Asignaturas.
+
+Nota entre 0 y 5 en Notas.
+
+Fecha obligatoria en Notas.
+
+Simulación de procesos mediante overlay de carga.
+
+🔄 Simulación de carga
+
+Se implementó un overlay visual que aparece en:
+
+Carga inicial de cada módulo.
+
+Apertura de formulario.
+
+Guardar registro.
+
+Eliminar registro.
+
+Carga de edición.
+
+Esto simula procesos reales de un sistema web.
 
